@@ -4,6 +4,8 @@ require 'kaminari'
 
 module Rich
   class RichFile < ActiveRecord::Base
+
+    attr_accessible :simplified_type, :owner_type, :owner_id
     
     scope :images, where("rich_rich_files.simplified_type = 'image'")
     scope :files, where("rich_rich_files.simplified_type = 'file'")
