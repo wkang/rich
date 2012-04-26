@@ -84,6 +84,7 @@ module Rich
     end
     
     base = {
+      :field_value_name => nil,
       :allowed_styles => self.allowed_styles,
       :default_style => self.default_style,
       :insert_many => self.insert_many,
